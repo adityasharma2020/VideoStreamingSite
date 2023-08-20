@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 10px;
   position: relative;
+
   .listTitle {
     color: white;
     font-size: 20px;
@@ -11,13 +12,14 @@
 
   .wrapper {
     position: relative;
+
     .sliderArrow {
       width: 50px;
       height: 100%;
       background-color: rgba(22, 22, 22, 0.5);
       color: white;
       position: absolute;
-      z-index: 99;
+      // z-index: 99;
       top: 0;
       bottom: 0;
       margin: auto;
@@ -34,6 +36,7 @@
       margin-left: 50px;
       margin-top: 10px;
       display: flex;
+      gap: 5px;
       width: max-content;
       transform: translateX(0);
       transition: all 1s ease;

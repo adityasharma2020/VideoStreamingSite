@@ -13,7 +13,9 @@ const ListItem = ({ index }) => {
   return (
     <div
       className='listItem'
-      style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
+      style={{
+        left: isHovered && index * 225 - 50 + index * 2.5,
+      }}
       onMouseEnter={() => setIshovered(true)}
       onMouseLeave={() => setIshovered(false)}
     >
@@ -22,7 +24,7 @@ const ListItem = ({ index }) => {
         alt=''
       />
       {isHovered && (
-        <>
+        <div className='card'>
           <video src={trailer} autoPlay={true} loop />
           <div className='itemInfo'>
             <div className='icons'>
@@ -45,7 +47,7 @@ const ListItem = ({ index }) => {
             </div>
             <div className='genre'>Actions</div>
           </div>
-        </>
+        </div>
       )}
     </div>
   )
